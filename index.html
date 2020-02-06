@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="public/styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" type="image/ico" href="public/assets/logo.png" />
+
+    <title>HedEx - HR</title>
+</head>
+<body>
+<div class="jumbotron jumbotron-fluid" style="background-color: rgb(190, 190, 190)">
+    <div class="container">
+        <div class="header">
+            <img src="public/assets/logo.png" class="logo" width="300px" alt="" />
+            <h1 class="head display-3 text-center" style="color: rgb(102, 0, 153);">Human Resources</h1>        
+            <a class="nav-link active" href="menu.html">MENU</a>
+
+        </div>
+    </div>
+
+    <img src="public/assets/truck2.jpg" class="img-body"  alt="" />
+
+
+<!-- LogIn information -->
+<div class="row">
+    <div class="login-dark">
+
+        <form method="post" action="/login">
+            <h2 class="sr-only">Login Form</h2>
+
+            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+            <div class="form-group">
+                <input class="form-control"  name="username" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">Log In</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+
+<footer class="page-footer footer-expand-lg text-white" style="background-color:rgb(102, 0, 153)">
+    <div class="footer-copyright text-center py-3">
+        © 2020 Copyright - Contributors: Mason Haney, Anfernee Edingbourgh and
+        Sylvain David.
+    </div>
+</footer>
+</html>
