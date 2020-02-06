@@ -5,8 +5,8 @@ module.exports = function(sequelize, DataTypes) {
   
     Department.associate = function(models) {
       Department.hasMany(models.Employee, {
-            onDelete: "cascade"
-        });
+        onDelete: "cascade"
+    });
     };
   
     return Department;
