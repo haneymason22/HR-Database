@@ -1,0 +1,25 @@
+{
+  "name": "hr-database",
+  "version": "1.0.0",
+  "description": "Project 2 ",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haneymason22/HR-Database.git"
+  },
+  "author": "Mason Haney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haneymason22/HR-Database/issues"
+  },
+  "homepage": "https://github.com/haneymason22/HR-Database#readme"
+}
