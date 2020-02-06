@@ -1,3 +1,65 @@
-.list-group-item {
-  line-height: 2.5;
+.text {
+  margin-left: auto;
+}
+
+.header {
+  position: relative;
+  margin-left: auto;
+  text-align: center;
+  padding-top: 1px;
+  margin-top: 1px;
+}
+
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-inline: 20px;
+}
+
+.img-body {
+  width: 100%;
+  /* height: 300px; */
+}
+/* LogIn information */
+
+.login-dark form {
+  max-width: 320px;
+  width: 90%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: rgb(102, 0, 153);
+  border-color: rgb(102, 0, 153);
+}
+.btn-primary:hover {
+  background-color: rgb(255, 102, 0);
+  border-color: rgb(255, 102, 0);
+}
+
+
+
+.main-img {
+  margin-top: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100px;
+}
+
+.page-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
 }
