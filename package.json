@@ -11,13 +11,18 @@
   },
   "license": "ISC",
   "dependencies": {
+    "babel-eslint": "^10.0.3",
     "dotenv": "^8.0.0",
+    "eslint-plugin-react": "^7.18.3",
     "express": "^4.17.0",
     "express-handlebars": "^3.1.0",
     "mysql2": "^1.6.5",
+    "path": "^0.12.7",
     "sequelize": "^5.8.6"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint-plugin-react": "^7.18.3",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "cross-env": "^5.2.0",
