@@ -1,5 +1,57 @@
 .text {
   margin-left: auto;
+
+}
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.img-body {
+  width: 100%;
+}
+
+
+.login-dark form {
+  max-width: 320px;
+  width: 90%;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 4px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: rgb(102, 0, 153);
+  border-color: rgb(102, 0, 153);
+}
+.btn-primary:hover {
+  background-color: rgb(255, 102, 0);
+  border-color: rgb(255, 102, 0);
+}
+
+.main-img {
+  margin-top: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100px;
+}
+
+.page-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+
 }
 
 .header {
@@ -13,12 +65,12 @@
 .jumbotron {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-inline: 20px;
+  /* padding-inline: 20px; */
+  margin-bottom: 0;
 }
 
 .img-body {
   width: 100%;
-  /* height: 300px; */
 }
 /* LogIn information */
 
@@ -46,7 +98,15 @@
   border-color: rgb(255, 102, 0);
 }
 
+.button{
+  background-color: rgb(102, 0, 153);
+  border-color: rgb(102, 0, 153);
+}
 
+.button:hover{
+  background-color: rgb(255, 102, 0);
+  border-color: rgb(255, 102, 0);
+}
 
 .main-img {
   margin-top: auto;
@@ -55,11 +115,74 @@
   width: 100px;
 }
 
-.page-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
+#heading {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 10px;
+  background-color: rgb(102, 0, 153)!important;
+}
+
+#subHeading {
+  font-family: Arial;
+  font-style: italic;
+  padding-left: 10px;
+  background-color: rgb(102, 0, 153)!important;
+}
+
+.panel-body{
+  background-color: rgb(102, 0, 153)!important;
+}
+.panel{
+  background-color: rgb(102, 0, 153)!important;
+}
+.panel-title {
+  font-weight: bold;
+  padding-left: 10px;
+  background-color: rgb(102, 0, 153)!important;
+}
+
+.table{
+  background-color: rgb(102, 0, 153)!important;
+}
+
+.form-group2{
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(102, 0, 153)!important;
+}
+
+.btn2{
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-color: white;
+  color: rgb(102, 0, 153) !important; 
+}
+
+.btn :hover{
+  background-color: rgb(255, 102, 0) !important;
+}
+
+th {
+  font-weight: bold;
+}
+
+.animation{
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 35%;
+  padding-top: 0;
+}
+
+.explanation{
+  text-align: center;
+  color: rgb(102, 0, 153)!important;
+}
+
+.nav-link{
+  background-color: rgb(255, 102, 0)!important;
+  border-color: rgb(255, 102, 0)!important;
+  color: white!important;
 }
