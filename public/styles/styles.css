@@ -19,7 +19,6 @@
 
 .img-body {
   width: 100%;
-  /* height: 300px; */
 }
 /* LogIn information */
 
@@ -64,24 +63,12 @@
   width: 100px;
 }
 
-/* .page-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  overflow: hidden;
-} */
-
-/* New Employee table */
-
 #heading {
   font-family: Arial;
   font-weight: bold;
   font-size: 50px;
   padding-left: 10px;
   background-color: rgb(102, 0, 153)!important;
-
 }
 
 #subHeading {
@@ -89,18 +76,13 @@
   font-style: italic;
   padding-left: 10px;
   background-color: rgb(102, 0, 153)!important;
-
 }
-
 
 .panel-body{
   background-color: rgb(102, 0, 153)!important;
-
 }
-
 .panel{
   background-color: rgb(102, 0, 153)!important;
-
 }
 .panel-title {
   font-weight: bold;
@@ -110,14 +92,12 @@
 
 .table{
   background-color: rgb(102, 0, 153)!important;
-
 }
 
 .form-group2{
     padding-left: 10px;
     padding-right: 10px;
     background-color: rgb(102, 0, 153)!important;
-
 }
 
 .btn2{
@@ -126,15 +106,11 @@
   margin-bottom: 10px;
   background-color: white;
   border-color: white;
-  color: rgb(102, 0, 153) !important;
-  
-
-
+  color: rgb(102, 0, 153) !important; 
 }
 
 .btn :hover{
   background-color: rgb(255, 102, 0) !important;
-
 }
 
 th {
