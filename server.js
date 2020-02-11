@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("public"));
 
-require("./routes/html-routes.js")(app);
+require("./routes/htmlRoutes.js")(app);
 require("./routes/employee-apiRoutes.js")(app);
 require("./routes/department-apiRoutes.js")(app);
 

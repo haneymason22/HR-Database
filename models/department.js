@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
     var Department = sequelize.define("Department", {
-        name: DataTypes.String
+        name: DataTypes.STRING
     });
   
     Department.associate = function(models) {
