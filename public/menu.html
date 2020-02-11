@@ -23,9 +23,10 @@
                 </h1>
             </div>
         </div>
+        <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Logout</a>
     </div>
 
-    <ul class="nav nav-justified">
+    <!-- <ul class="nav nav-justified">
         <li class="nav-item">
             <a class="nav-link active" href="menu.html">Home</a>
         </li>
@@ -38,21 +39,28 @@
         <li class="nav-item">
             <a class="nav-link active" href="newEmployee.html">New Employee</a>
         </li>
-    </ul>
-
-    <div id="byName" class="container-fluid" style="padding-top:10px;padding-bottom:10px; text-align: center;">
-        <a href="byName.html"><img class="main-img" src="assets/hr1.png" /></a>
-        <h3 style="color:rgb(102, 0, 153)">By Name</h3>
+    </ul> -->
+    <div>
+        <h4 class="explanation">Click on the image representing the department you want to access to.</h4>
     </div>
-
-    <div id="byDepartment" class="container-fluid" style="padding-top:10px;padding-bottom:10px; text-align: center;">
-        <a href="byDepartment.html"><img class="main-img" src="assets/hr2.png" /></a>
-        <h3 style="color:rgb(255, 102, 0)">By Department</h3>
-    </div>
-
-    <div id="newEmployee" class="container-fluid" style="padding-top:10px;padding-bottom:10px; text-align: center;">
-        <a href="newEmployee.html"><img class="main-img" src="assets/hr3.png" /></a>
-        <h3 style="color:rgb(102, 0, 153)">New Employee</h3>
+    <div>
+        <img src="assets/warehouse4.png" alt="Department" usemap="#department" class="animation" width="800px"
+            height="600px" />
+        <map name="department">
+            <area shape="rect" coords="0,0,200,200" alt="customerdpt" href="customerdpt.html" />
+            <area shape="rect" coords="200,0,400,200" alt="shippingdpt" href="shippingdpt.html" />
+            <area shape="rect" coords="0,0,200,200" alt="customerdpt" href="custmerdpt.html" />
+            <area shape="rect" coords="400,0,600,200" alt="administrationdpt" href="administrationdpt.html" />
+            <area shape="rect" coords="0,0,200,200" alt="customerdpt" href="custmerdpt.html" />
+            <area shape="rect" coords="0,200,400,400" alt="internationaldpt" href="internationaldpt.html" />
+            <area shape="rect" coords="400,200,600,400" alt="receivingdpt" href="receivingdpt.html" />
+            <area shape="rect" coords="0,0,200,200" alt="customerdpt" href="custmerdpt.html" />
+            <area shape="rect" coords="0,400,200,600" alt="ecommercedpt" href="ecommercedpt.html" />
+            <area shape="rect" coords="200,400,600,600" alt="warehousedpt" href="warehousedpt.html" />
+            <area shape="rect" coords="600,0,800,200" alt="byName" href="byName.html" />
+            <area shape="rect" coords="600,200,800,400" alt="Help" href="https://www.shrm.org/" />
+            <area shape="rect" coords="600,400,800,600" alt="newEmployee" href="newEmployee.html" />
+        </map>
     </div>
 </body>
 
