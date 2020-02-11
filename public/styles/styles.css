@@ -1,17 +1,14 @@
 .text {
   margin-left: auto;
-
 }
 .jumbotron {
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 
 .img-body {
   width: 100%;
 }
-
 
 .login-dark form {
   max-width: 320px;
@@ -44,16 +41,6 @@
   width: 100px;
 }
 
-.page-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
-
-}
-
 .header {
   position: relative;
   margin-left: auto;
@@ -65,14 +52,12 @@
 .jumbotron {
   padding-top: 20px;
   padding-bottom: 20px;
-  /* padding-inline: 20px; */
   margin-bottom: 0;
 }
 
 .img-body {
   width: 100%;
 }
-/* LogIn information */
 
 .login-dark form {
   max-width: 320px;
@@ -98,12 +83,12 @@
   border-color: rgb(255, 102, 0);
 }
 
-.button{
+.button {
   background-color: rgb(102, 0, 153);
   border-color: rgb(102, 0, 153);
 }
 
-.button:hover{
+.button:hover {
   background-color: rgb(255, 102, 0);
   border-color: rgb(255, 102, 0);
 }
@@ -118,50 +103,63 @@
 #heading {
   font-family: Arial;
   font-weight: bold;
+  width: 100%;
   font-size: 50px;
   padding-left: 10px;
-  background-color: rgb(102, 0, 153)!important;
+  background-color: rgb(102, 0, 153) !important;
 }
 
 #subHeading {
   font-family: Arial;
   font-style: italic;
   padding-left: 10px;
-  background-color: rgb(102, 0, 153)!important;
+  background-color: rgb(102, 0, 153) !important;
 }
 
-.panel-body{
-  background-color: rgb(102, 0, 153)!important;
+.panel-body {
+  background-color: rgb(102, 0, 153) !important;
+  margin-right: 0;
+  padding-right: 0;
 }
-.panel{
-  background-color: rgb(102, 0, 153)!important;
+
+.panel-heading {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+.panel {
+  background-color: rgb(102, 0, 153) !important;
+  margin-right: 0 !important;
+  padding-right: 0 !important;
 }
 .panel-title {
   font-weight: bold;
   padding-left: 10px;
-  background-color: rgb(102, 0, 153)!important;
+  margin-right: 0;
+  padding-right: 0;
+  background-color: rgb(102, 0, 153) !important;
 }
 
-.table{
-  background-color: rgb(102, 0, 153)!important;
+.table {
+  background-color: rgb(102, 0, 153) !important;
 }
 
-.form-group2{
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: rgb(102, 0, 153)!important;
+.form-group2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(102, 0, 153) !important;
 }
 
-.btn2{
+.btn2 {
   padding-left: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
   background-color: white;
   border-color: white;
-  color: rgb(102, 0, 153) !important; 
+  color: rgb(102, 0, 153) !important;
 }
 
-.btn :hover{
+.btn :hover {
   background-color: rgb(255, 102, 0) !important;
 }
 
@@ -169,20 +167,36 @@ th {
   font-weight: bold;
 }
 
-.animation{
+.animation {
   margin-top: 0;
   margin-bottom: 20px;
-  margin-left: 35%;
+  margin-left: 29%;
   padding-top: 0;
 }
 
-.explanation{
+.explanation {
   text-align: center;
-  color: rgb(102, 0, 153)!important;
+  color: rgb(102, 0, 153) !important;
 }
 
-.nav-link{
-  background-color: rgb(255, 102, 0)!important;
-  border-color: rgb(255, 102, 0)!important;
-  color: white!important;
+.nav-link {
+  background-color: rgb(255, 102, 0) !important;
+  border-color: rgb(255, 102, 0) !important;
+  color: white !important;
+}
+
+.col-sm-2 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.col-sm-10 {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.btn-lg{
+  background-color: rgb(255, 102, 0) !important;
+  border: 0;
+  margin-left: 90%;
 }
