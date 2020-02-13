@@ -4,13 +4,13 @@ var db = require("../models");
 module.exports = function(app) {
   app.get("/api/employees", function(req, res) {
     var query = {};
-    if (req.query.employee_id) {
-      query.EmployeeId = req.query.employee_id;
+    if (req.query.department_id) {
+      query.DepartmentId = req.query.department_id;
     }
 
-    db.Post.findAll({
+    db.Employee.findAll({
       where: query,
-      include: [db.Employee],
+      include: [db.Department],
     }).then(function(dbEmployee) {
       res.json(dbEmployee);
     });
@@ -19,7 +19,7 @@ module.exports = function(app) {
   app.get("/api/employees/:id", function(req, res) {
     
     db.Employee.findOne({
-      include: {model: Employee, as: "Employees"},
+      include: {model: Employee, as: "Departments"},
       where: {
         id: req.params.id
       }
