@@ -104,7 +104,6 @@ $(document).ready(function() {
     function renderEmpty() {
       var alertDiv = $("<div>");
       alertDiv.addClass("alert alert-danger");
-      alertDiv.text("You must create an Employee before you can create a Post.");
       employeeContainer.append(alertDiv);
     };
   
