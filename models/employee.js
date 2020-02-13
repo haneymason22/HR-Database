@@ -34,7 +34,7 @@ module.exports = function(sequelize, DataTypes) {
   Employee.associate = function(models) {
     Employee.belongsTo(models.Department, {
       foreignKey: {
-        allowNull: false
+        allowNull: true
       }
     });
   };

@@ -59,6 +59,18 @@
   width: 100%;
 }
 
+tr {
+  background-color: white;
+}
+
+td {
+  background-color: white;
+}
+
+#form-row {
+  background-color:  rgb(102, 0, 153);
+}
+
 .login-dark form {
   max-width: 320px;
   width: 90%;

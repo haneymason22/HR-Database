@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="icon" type="image/ico" href="assets/logo.png" />
@@ -14,7 +15,66 @@
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid" style="background-color: rgb(190, 190, 190)">
+  <div class="jumbotron jumbotron-fluid" style="background-color: rgb(190, 190, 190)">
+    <div class="container">
+        <div class="header">
+            <img src="assets/logo.png" class="logo" width="300px" alt="" />
+            <h1 class="head display-3 text-center" style="color: rgb(102, 0, 153);">
+                New Employee
+            </h1>
+        </div>
+    </div>
+    <a href="/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Logout</a>
+</div>
+<ul class="nav nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" href="/menu">Home</a>
+  </li>
+</ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="employee-container">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th colspan="2">Name</th>
+                <th colspan="2">Department</th>
+                <th colspan="1">Starting Date</th>
+                <th colspan="1">Salary</th>
+                <th colspan="1">Gender</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="form-row">
+                <form id="employee-form">
+                  <td colspan="2">
+                    <input placeholder = "First and Last Name" id="new-name" type="text" />
+                  </td>
+                  <td colspan="2">
+                    <input placeholder = "Enter a Department" id="Department" type="text" />
+                  </td>
+                  <td colspan="1">
+                    <input placeholder = "YYYY-MM-DD" id="starting" type="text" />
+                  </td>
+                  <td colspan="1">
+                    <input placeholder= "00000.00" id="salary" type="text" />
+                  </td>
+                  <td colspan="1">
+                    <input placeholder = "Male or Female" id="Gender" type="text" />
+                  </td>
+                  <td>
+                    <button type="submit" class="btn btn-success">Add Employee</button>
+                  </td>
+                </form>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- <div class="jumbotron jumbotron-fluid" style="background-color: rgb(190, 190, 190)">
         <div class="container">
             <div class="header">
                 <img src="assets/logo.png" class="logo" width="300px" alt="" />
@@ -30,75 +90,110 @@
         <a class="nav-link active" href="/menu">Home</a>
       </li>
     </ul>
-
+  <div class = "employee-container">
     <div class="row">
-        <div class="col-xs-12 col-sm-10">
-          <div class="panel panel-default bg-dark text-white ">
-            <div class = "employee-container">
-              <div class="panel-heading">
-                <h3 class="panel-title">New Employees</h3>
-              </div>
-              <div class="panel-body ">
-                <table class="table table-hover bg-dark text-white" id="new-table">
-                  <thead>
-                    <tr>
-                      <th class="text-cente">Name</th>
-                      <th class="text-cente">Department</th>
-                      <th class="text-center">Starting Date</th>
-                      <th class="text-center">Salary</th>
-                      <th class="text-center">Gender</th>
-                    </tr>
-                  </thead>
-                  <tbody id="new-table-rows">
-                    
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-
-        <div class="col-xs-12 col-sm-2">
-          <div class="panel panel-default">
+      <div class="col-xs-12 col-sm-10">
+        <div class="panel panel-default bg-dark text-white ">
+          
             <div class="panel-heading">
-              <h3 class="panel-title bg-dark text-center text-white  ">Add New Employee</h3>
-              <div>
-                <div class="panel-body bg-dark text-white">
-                  <tbody>
-                    <form id = "employee-form">
-                      <div class="form-group2">
+              <h3 class="panel-title">New Employees</h3>
+            </div>
+            <div class="panel-body ">
+              <table class="table table-hover bg-dark text-white" id="new-table">
+                <thead>
+                  <tr>
+                    <th class="text-cente">Name</th>
+                    <th class="text-cente">Department</th>
+                    <th class="text-center">Starting Date</th>
+                    <th class="text-center">Salary</th>
+                    <th class="text-center">Gender</th>
+                  </tr>
+                </thead>
+                <tbody id="new-table-rows">
+                  <form id = "employee-form">
+                    <div class="form-group2">
+                      <label>Name</label>
+                      <input type="text" class="form-control form-field" id="new-name">
+                    </div>
+                    <div class="form-group2">
+                      <label>Department</label>
+                      <input type="text" class="form-control form-field" id="Department">
+                    </div>
+                    <div class="form-group2">
+                      <label>Starting Date</label>
+                      <input type="text" class="form-control form-field" id="starting">
+                    </div>
+                    <div class="form-group2">
+                      <label>Salary</label>
+                      <input type="text" class="form-control form-field" id="salary">
+                    </div>
+                    <div class="form-group2">
+                        <label>Gender</label>
+                        <input type="text" class="form-control form-field" id="Gender">
+                      </div>
+                    <button type="submit" class="btn2 btn-success text-white" id="submit">Add Employee</button>
+                  </form>
+                </tbody>
+              </table>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="col-xs-12 col-sm-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title bg-dark text-center text-white  ">Add New Employee</h3>
+            <div>
+              <div class="panel-body bg-dark text-white">
+                <tbody>
+                  <form id = "employee-form">
+                    <div class="form-group2">
+                      <td>
                         <label>Name</label>
                         <input type="text" class="form-control form-field" id="new-name">
-                      </div>
-                      <div class="form-group2">
+                      </td>
+                    </div>
+                    <div class="form-group2">
+                      <td>
                         <label>Department</label>
                         <input type="text" class="form-control form-field" id="Department">
-                      </div>
-                      <div class="form-group2">
+                      </td>
+                    </div>
+                    <div class="form-group2">
+                      <td>
                         <label>Starting Date</label>
                         <input type="text" class="form-control form-field" id="starting">
-                      </div>
-                      <div class="form-group2">
+                      </td>
+                    </div>
+                    <div class="form-group2">
+                      <td>
                         <label>Salary</label>
-                        <input type="text" class="form-control form-field" id="salary">
-                      </div>
-                      <div class="form-group2">
-                          <label>Gender</label>
-                          <input type="text" class="form-control form-field" id="Gender">
-                        </div>
-  
+                      <input type="text" class="form-control form-field" id="salary">
+                      </td>
+                    </div>
+                    <div class="form-group2">
+                      <td>
+                        <label>Gender</label>
+                        <input type="text" class="form-control form-field" id="Gender">
+                      </td>
+                     </div>
+                    <td>
                       <button type="submit" class="btn2 btn-success text-white" id="submit">Add Employee</button>
-                    </form>
-                  </tbody>
-                  
-                </div>
+                    </td>
+                  </form>
+                </tbody>
               </div>
             </div>
           </div>
         </div>
-   </div>
+      </div>
+  </div>
+</div> -->
+<script src="js/newEmployee.js" type="text/javascript"></script>
 </body>
+
+
 
 <footer class="page-footer footer-expand-lg text-white" style="background-color:rgb(102, 0, 153)">
   <div class="footer-copyright text-center py-3">
